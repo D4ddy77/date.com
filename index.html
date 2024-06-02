@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date.com - Rent a BF/GF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .profile-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px 0;
+            padding: 15px;
+            text-align: center;
+        }
+        .profile-card img {
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .profile-card button {
+            background-color: #ff6b6b;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .profile-card button:hover {
+            background-color: #ff4c4c;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function rentProfile(profileName, price) {
+            alert("You have rented " + profileName + " for $" + price + " per day.");
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Date.com</h1>
+    <p>Rent a Boyfriend or Girlfriend</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Profiles</a>
+    <a href="#">Cart</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+</nav>
+
+<div class="container">
+    <h2>Available Profiles</h2>
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        <h3>John Doe</h3>
+        <p>Age: 30</p>
+        <p>Location: New York, NY</p>
+        <p>Interests: Music, Traveling, Cooking</p>
+        <p>Price: $50 per day</p>
+        <button onclick="rentProfile('John Doe', 50)">Rent Now</button>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/100" alt="Profile Picture">
+        <h3>Jane Smith</h3>
+        <p>Age: 28</p>
+        <p>Location: Los Angeles, CA</p>
+        <p>Interests: Reading, Hiking, Art</p>
+        <p>Price: $60 per day</p>
+        <button onclick="rentProfile('Jane Smith', 60)">Rent Now</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Date.com. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
